@@ -1,0 +1,2 @@
+class PeymentTrialsController < ApplicationController
+end

@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_27_060249) do
-  create_table "peyment_trials", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2022_10_27_085137) do
+  create_table "peyment_trials", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.string "phone_number"
     t.integer "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "response"
+    t.boolean "state", default: false
+    t.string "code"
+    t.string "CheckoutRequestID"
+    t.string "MerchantRequestID"
+  end
+
+  create_table "transactions", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+    t.string "callback"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

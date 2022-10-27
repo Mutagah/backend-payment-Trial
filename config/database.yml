@@ -8,8 +8,8 @@ default: &default
   adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   # timeout: 5000
-  username: root
-  password:
+  username: tasha_paid
+  password: tashexc2754
   socket: /tmp/mysql.sock
 
 development:

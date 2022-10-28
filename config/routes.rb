@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :transactions
-  resources :peyment_trials
+  # resources :peyment_trials
+  post "/peyment", to: "peyments#payment"
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

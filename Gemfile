@@ -12,6 +12,10 @@ gem "rack-cors"
 # gem "sqlite3", "~> 1.4"
 gem "mysql2", "~> 0.5"
 
+gem "dotenv"
+
+gem "byebug"
+
 gem "phony_rails"
 
 # Use the Puma web server [https://github.com/puma/puma]

@@ -20,16 +20,16 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: db/test.sqlite3
-
-# production:
+# test:
 #   <<: *default
-#   database: db/production.sqlite3
+#   database: db/test.sqlite3
 
 production:
   <<: *default
-  database: api_eventful_production
-  username: api_eventful
-  password: <%= ENV["API_EVENTFUL_DATABASE_PASSWORD"] %>
+  database: 
+
+# production:
+#   <<: *default
+#   database: api_eventful_production
+#   username: api_eventful
+#   password: <%= ENV["API_EVENTFUL_DATABASE_PASSWORD"] %>
